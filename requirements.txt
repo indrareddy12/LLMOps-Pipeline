@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+transformers
+accelerate
+datasets
+mlflow
+torch
+pydantic
+prometheus_client
+gunicorn
+pytest
+boto3
