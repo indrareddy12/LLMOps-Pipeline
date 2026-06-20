@@ -30,7 +30,7 @@ graph TD
     Client[Client Apps / Users] -->|HTTPS Requests| ALB[AWS ALB / Ingress Controller]
     ALB -->|Load Balancing| K8sCluster[Kubernetes Pods: FastAPI Servicers]
     
-    subgraph FastAPI Pods [FastAPI / Uvicorn Service Pods]
+    subgraph FastAPIPods ["FastAPI / Uvicorn Service Pods"]
         Server[FastAPI Inference Engine]
         Cache[Local Redis Cache / Prompt Cache]
         ModelLoader[In-Memory Model: DistilGPT-2 / Quantized LLM]
@@ -41,9 +41,9 @@ graph TD
         Server --> PromExporter
     end
     
-    K8sCluster --> FastAPI Pods
+    K8sCluster --> FastAPIPods
     
-    subgraph Vector DB Layer [Retrieval-Augmented Generation]
+    subgraph VectorDBLayer ["Retrieval-Augmented Generation"]
         VectorDB[(Vector DB: Pinecone / Milvus / Qdrant)]
         SparseDB[(Sparse Search: BM25 / ElasticSearch)]
     end
@@ -51,7 +51,7 @@ graph TD
     Server -->|Hybrid Search Query| VectorDB
     Server -->|Lexical Match Query| SparseDB
     
-    subgraph Experiment & Model Registry
+    subgraph ExperimentRegistry ["Experiment & Model Registry"]
         MLflow[MLflow Tracking Server]
         S3Bucket[(S3 Model Artifacts Store)]
         Registry[MLflow Model Registry]
