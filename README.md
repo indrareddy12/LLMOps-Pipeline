@@ -11,12 +11,12 @@ A production-ready, highly optimized LLMOps serving and fine-tuning pipeline eng
 ---
 
 ## 📞 Recruiter & Hiring Manager Contact Info
-* **Name:** [Your Name]
-* **Email:** [Your Email Address]
-* **Phone:** [Your Phone Number]
-* **LinkedIn:** [Your LinkedIn Profile URL]
-* **GitHub Portfolio:** [Your GitHub Profile URL]
-* **Availability:** [e.g., Immediate / 2 Weeks Notice]
+* **Name:** Indrasena Reddy Bathini
+* **Email:** indrasenareddybathini86@gmail.com
+* **Phone:** +91 9392698146
+* **LinkedIn:** [Indrasena Reddy Bathini](https://www.linkedin.com/in/indra-reddy-b-52603b282/)
+* **GitHub Portfolio:** [indrareddy12](https://github.com/indrareddy12)
+* **Availability:** Immediate / Open to Opportunities
 * **Desired Roles:** Machine Learning Engineer (MLE), LLMOps Engineer, MLOps Engineer, Senior Software Engineer (AI/ML)
 
 ---
@@ -34,7 +34,7 @@ graph TD
         Server[FastAPI Inference Engine]
         Cache[Local Redis Cache / Prompt Cache]
         ModelLoader[In-Memory Model: DistilGPT-2 / Quantized LLM]
-        PromExporter[/metrics Endpoint]
+        PromExporter["/metrics Endpoint"]
         
         Server <--> Cache
         Server --> ModelLoader
